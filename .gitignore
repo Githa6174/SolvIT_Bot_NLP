@@ -1,0 +1,20 @@
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Models and datasets (optional to ignore, but usually we keep them if they are small)
+# *.pkl
+# *.csv
+
+# macOS
+.DS_Store

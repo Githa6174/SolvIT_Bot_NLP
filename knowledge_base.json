@@ -1,0 +1,181 @@
+{
+  "greeting": {
+    "kategori": "Salam & Percakapan",
+    "intent": "greeting",
+    "masalah": [
+      "halo",
+      "hi",
+      "pagi",
+      "siang",
+      "sore",
+      "malam",
+      "hallo",
+      "assalamualaikum",
+      "selamat pagi",
+      "selamat siang",
+      "selamat sore",
+      "selamat malam",
+      "apa kabar",
+      "gimana kabar",
+      "hows it going",
+      "hey",
+      "yo",
+      "ada yang bisa dibantu",
+      "butuh bantuan",
+      "bisa ngomong sama admin",
+      "ada yang bisa membantu"
+    ],
+    "solusi": [
+      "Halo! 👋 Selamat datang di IT Help Desk SolvIT. Ada yang bisa saya bantu?",
+      "Halo! Saya siap membantu masalah IT Anda. Apa yang sedang bermasalah?",
+      "Selamat datang di IT Support. Saya siap melayani. Ceritakan masalahnya."
+    ]
+  },
+  "network_internet": {
+    "kategori": "Jaringan & Internet",
+    "intent": "network_issue",
+    "masalah": [
+      "internet mati",
+      "wifi putus",
+      "tidak bisa konek jaringan",
+      "kabel lan tidak berfungsi",
+      "sinyal tanda seru kuning",
+      "koneksi internet terputus",
+      "wifi lemah",
+      "kecepatan internet lambat",
+      "tidak bisa terhubung ke router",
+      "ethernet tidak terdeteksi",
+      "wifi hilang",
+      "network card tidak berfungsi",
+      "koneksi unstable",
+      "ping tinggi",
+      "packet loss",
+      "bandwidth terbatas",
+      "speedtest lambat",
+      "vpn tidak connect",
+      "proxy tidak berfungsi",
+      "firewall blokir koneksi",
+      "lan cable error",
+      "router offline",
+      "modem tidak nyala",
+      "signal lemah",
+      "koneksi putus putus",
+      "internet disconnect"
+    ],
+    "solusi": [
+      "Coba lakukan langkah berikut:\n1. Periksa indikator LAN/WiFi di router\n2. Restart router selama 10 detik\n3. Lakukan 'ipconfig /release' lalu 'ipconfig /renew' di CMD\n4. Jika masih gagal, hubungi Network Support.",
+      "Masalah konektivitas terdeteksi. Coba:\n1. Buka Device Manager\n2. Cari Network Adapters\n3. Klik kanan pada adapter WiFi → Update Driver\n4. Restart komputer Anda jika diminta.",
+      "Cek status koneksi:\n1. Buka CMD\n2. Ketik: ping 8.8.8.8\n3. Jika Request Timed Out, periksa sambungan kabel atau indikator modem."
+    ]
+  },
+  "printer_hardware": {
+    "kategori": "Perangkat Keras - Printer",
+    "intent": "printer_issue",
+    "masalah": [
+      "printer macet",
+      "kertas nyangkut",
+      "hasil print putus",
+      "printer offline terus",
+      "lampu indikator berkedip merah",
+      "printer tidak terdeteksi",
+      "driver printer error",
+      "tidak bisa print dari laptop",
+      "printing queue penuh",
+      "toner habis",
+      "printer bising aneh",
+      "hasil print warna jelek",
+      "scanner tidak berfungsi",
+      "belum bisa scan",
+      "hasil scan buram",
+      "paper jam",
+      "printer gangguan",
+      "print tidak keluar"
+    ],
+    "solusi": [
+      "Untuk printer offline:\n1. Matikan printer dan tunggu 30 detik\n2. Tekan Power ON kembali\n3. Buka Settings → Printers & Scanners\n4. Hapus dan tambahkan ulang printer.",
+      "Ada kertas nyangkut:\n1. MATIKAN printer terlebih dahulu\n2. Buka semua cover panel\n3. Keluarkan kertas perlahan agar tidak sobek\n4. Tutup cover dan nyalakan ulang.",
+      "Print queue penuh:\n1. Buka CMD (Admin)\n2. Ketik: net stop spooler (Enter)\n3. Ketik: net start spooler (Enter)\n4. Coba print ulang dokumen."
+    ]
+  },
+  "system_os": {
+    "kategori": "Sistem Operasi & Crash",
+    "intent": "system_error",
+    "masalah": [
+      "layar biru",
+      "blue screen",
+      "bsod",
+      "komputer restart sendiri",
+      "pesan fatal error",
+      "crash saat startup",
+      "windows tidak bisa booting",
+      "aplikasi sering crash",
+      "memory leak",
+      "cpu usage tinggi",
+      "disk usage penuh",
+      "system hang",
+      "loading lambat",
+      "error code 0x",
+      "driver conflict",
+      "update windows gagal",
+      "windows error recovery",
+      "startup repair",
+      "system freeze"
+    ],
+    "solusi": [
+      "Blue Screen (BSOD) - PENTING:\n1. Biarkan proses memory dump selesai\n2. Catat Stop Code yang tertera\n3. Boot ke Safe Mode (F8) jika terus berulang\n4. Hubungi IT Support dengan membawa catatan Stop Code.",
+      "Komputer restart sendiri:\n1. Cek suhu CPU (overheating?) → Bersihkan fan\n2. Cek Windows Update yang pending\n3. Uninstall software yang baru dipasang hari ini.",
+      "Disk usage 100% / Drive C: penuh:\n1. Buka File Explorer → This PC\n2. Klik kanan C: Drive → Properties\n3. Buka Disk Cleanup tool\n4. Bersihkan file Temporary."
+    ]
+  },
+  "software_issue": {
+    "kategori": "Software & Aplikasi",
+    "intent": "software_problem",
+    "masalah": [
+      "aplikasi tidak bisa dibuka",
+      "error saat install software",
+      "lisensi software expired",
+      "software illegal",
+      "crack software",
+      "aktivasi office gagal",
+      "microsoft office tidak berfungsi",
+      "browser tidak bisa buka website",
+      "chrome error",
+      "firefox tidak merespons",
+      "file tidak bisa dibuka",
+      "format file tidak didukung",
+      "software lama sudah tidak support",
+      "ada bug di aplikasi",
+      "program error",
+      "aplikasi loading lama",
+      "runtime error"
+    ],
+    "solusi": [
+      "Aplikasi tidak bisa dibuka:\n1. Cek Task Manager (Ctrl+Shift+Esc), kill process yang nyangkut\n2. Klik kanan aplikasi → Run as Administrator\n3. Reinstall jika file corrupt.",
+      "Aktivasi Office bermasalah:\n1. Buka Word/Excel → File → Account → Sign out\n2. Sign in kembali dengan akun email kantor yang valid\n3. Tunggu 5 menit untuk proses sinkronisasi lisensi.",
+      "Browser tidak bisa buka web:\n1. Clear cache (Ctrl+Shift+Delete)\n2. Coba mode Incognito (Ctrl+Shift+N)\n3. Cek apakah alamat web terblokir oleh Firewall kantor."
+    ]
+  },
+  "security_issue": {
+    "kategori": "Security & Access Control",
+    "intent": "security_problem",
+    "masalah": [
+      "lupa password",
+      "account terkunci",
+      "tidak bisa login",
+      "virus terdeteksi",
+      "malware infection",
+      "ransomware attack",
+      "secure boot off",
+      "windows defender off",
+      "firewall disabled",
+      "suspicious activity",
+      "antivirus error",
+      "security warning"
+    ],
+    "solusi": [
+      "Lupa password Windows:\n1. Gunakan opsi 'Reset password' di layar login\n2. Jika terkunci, hubungi IT Help Desk dengan ID Karyawan untuk proses reset dari Active Directory.",
+      "Virus / Malware terdeteksi:\n1. JANGAN buka file mencurigakan\n2. Putuskan koneksi internet/LAN\n3. Lakukan Full Scan menggunakan Windows Defender\n4. Laporkan ke IT Security secepatnya.",
+      "Account terkunci:\n1. Jangan terus mencoba login (menghindari lockout permanen)\n2. Tunggu 15 menit, pastikan Caps Lock mati\n3. Hubungi admin untuk unlock akun."
+    ]
+  }
+}
